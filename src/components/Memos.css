@@ -1,0 +1,152 @@
+.memos-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.memos-container h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.no-messages {
+  font-size: 1rem;
+  color: var(--subtle-text-color);
+}
+
+.memos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.memo-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.memo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.memo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.memo-name {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.memo-timestamp {
+  font-size: 0.85rem;
+  color: var(--subtle-text-color);
+}
+
+.memo-message {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 10px 0;
+  text-align: left;
+}
+
+.memo-from {
+  font-size: 0.9rem;
+  color: var(--subtle-text-color);
+  text-align: left;
+  word-break: break-word;
+}
+
+.memo-quantity {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--success-color);
+}
+
+.memo-payment {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--warning-color);
+}
+
+.memo-pending {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--error-color);
+  background-color: var(--error-bg-color);
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.completed {
+  border-left: 5px solid var(--success-color);
+  opacity: 0.8;
+}
+
+.memo-order {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 8px;
+}
+
+.memo-eth {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--success-color);
+  margin-top: 5px;
+}
+
+/* Dark mode variables */
+:root {
+  --text-color: #1e293b;
+  --bg-color: #f8fafc;
+  --heading-color: #1e293b;
+  --subtle-text-color: #64748b;
+  --card-bg-color: #ffffff;
+  --border-color: #e2e8f0;
+  --primary-color: #2563eb;
+  --success-color: #16a34a;
+  --warning-color: #d97706;
+  --error-color: #dc2626;
+  --error-bg-color: #fee2e2;
+}
+
+[data-theme='dark'] {
+  --text-color: #000;
+  --bg-color: #1e293b;
+  --heading-color: #f8fafc;
+  --subtle-text-color: #94a3b8;
+  --card-bg-color: #334155;
+  --border-color: #475569;
+  --primary-color: #3b82f6;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --error-bg-color: #7f1d1d;
+}
+
+.memo-quantity
+.memo-order span,
+.memo-eth span,
+.memo-tip span {
+  font-weight: bold;
+  color: var(--primary-color);
+}

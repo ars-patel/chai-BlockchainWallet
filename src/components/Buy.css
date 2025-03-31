@@ -1,0 +1,138 @@
+/* Default Light Mode */
+.buy-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.buy-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.buy-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  background: #f8f8f8;
+  transition: border-color 0.3s ease, background-color 0.3s;
+  text-align: center;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  background: #fff;
+}
+
+/* Button Styles */
+.buy-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #007bff, #00b7ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.buy-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* 🔥 Dark Mode */
+.buy-container.dark-mode {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.buy-container.dark-mode h1 {
+  color: #fff;
+}
+
+.buy-container h2{
+  color: #000;
+}
+
+.buy-container p{
+  color: #000;
+}
+
+.buy-container.dark-mode p{
+  color: #fff;
+}
+
+.buy-container.dark-mode h2{
+  color: #fff;
+}
+
+.buy-container.dark-mode .input-group label {
+  color: #ddd;
+}
+
+.buy-container.dark-mode .input-group input {
+  background: #222;
+  color: #fff;
+  border-color: #444; 
+}
+.buy-container .input-group input {
+  background: #fff;
+  color: #000;
+  border-color: #444;
+}
+
+.buy-container.dark-mode .input-group input:focus {
+  border-color: #00b7ff;
+}
+
+.buy-container.dark-mode .buy-button {
+  background: linear-gradient(135deg, #00b7ff, #007bff);
+}
+
+.buy-container.dark-mode .buy-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
